@@ -36,7 +36,7 @@ _The Epicodus Track Picker is a website that asks the user a series of questions
   * __Example Output:__ [3, 4, "ping-pong", 6]
 * It can create list items in a string for each number or word given.
   * __Example Input:__ [14, "ping-pong"]
-  * __Example Output:__ "'<li>14</li><li>"ping-pong"</li>'"
+  * __Example Output:__ "\<li>14</li>\<li>"ping-pong"</li>"
 * It will throw an alert message if given input that is not a number.
   * __Example Input:__ "12a"
   * __Example Output:__ "Please enter in a valid number"
