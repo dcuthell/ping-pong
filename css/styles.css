@@ -1,0 +1,10 @@
+body{
+  background: linear-gradient(#EDEFFE, #EDFEEE, #EDEFFE);
+}
+
+.jumbotron{
+  text-align: center;
+}
+.well{
+  background-color: #EDEFFE;
+}
