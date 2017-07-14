@@ -22,21 +22,32 @@ _The Epicodus Track Picker is a website that asks the user a series of questions
 * It can count up to the provided number.
   * __Example Input:__ 2
   * __Example Output:__ [1,2]
-* It can count backwars from the provided number to 0.
-  * __Example Input: 2__
-  * __Example Output: [1,2]__
-* It can count up to the provided number
-  * __Example Input: 2__
-  * __Example Output: [1,2]__
-
+* It can count backwards from the provided number to 0.
+  * __Example Input:__ 2
+  * __Example Output:__ [1,2]
+* It can replace numbers divisible by 3 with the word "ping".
+  * __Example Input:__ [3, 4, 5, 6]
+  * __Example Output:__ ["ping", 4, 5, "ping"]
+* It can replace numbers divisible by 5 with the word "pong".
+  * __Example Input:__ [3, 4, 5, 6]
+  * __Example Output:__ [3, 4, "pong", 6]
+* It can replace numbers divisible by 15 with the word "ping-pong".
+  * __Example Input:__ [13, 14, 15, 16]
+  * __Example Output:__ [3, 4, "ping-pong", 6]
+* It can create list items in a string for each number or word given.
+  * __Example Input:__ [14, "ping-pong"]
+  * __Example Output:__ "<li>14</li><li>"ping-pong"</li>"
+* It will throw an alert message if given input that is not a number.
+  * __Example Input:__ "12a"
+  * __Example Output:__ "Please enter in a valid number"
 
 ## Known Bugs
 
-_No known bugs at this time_
+_Some text sizing issues are being addressed_
 
 ## Support and contact details
 
-_For technical support, additional information, or feedback, please send an email to dcc1447@gmail.com, or call 281-330-8004. Ask for Mike. Who? Mike Jones._
+_For technical support, additional information, or feedback, please send an email to dcc1447@gmail.com, or call 503-867-5309. Ask for Jenny._
 
 ## Technologies Used
 

@@ -38,7 +38,7 @@ function ppFunction(userInput, ppStyle){
       }
     }
   }else{
-    alert("Invalid style type");
+    console.log("Invalid style type");
   }
   return output;
 }
