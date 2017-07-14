@@ -6,11 +6,18 @@ function ppFunction(userInput){
     return output;
   }
   count = parseInt(userInput);
-  debugger;
-  for(var i = 0; i <= count; i++){
-    output += "<li>" + i + "</li>";
+  for(var i = 1; i <= count; i++){
+    if(i%15 === 0){
+      output += "<li>ping-pong</li>";
+    }else if(i%5 === 0){
+      output += "<li>pong</li>";
+    }else if(i%3 === 0){
+      output += "<li>ping</li>";
+    }else{
+      output += "<li>" + i + "</li>";
+    }
+
   }
-  debugger;
   return output;
 }
 
