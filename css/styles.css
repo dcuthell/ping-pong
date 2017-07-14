@@ -65,13 +65,8 @@ body{
   font-weight: 700;
 }
 
-#rightBar p, li, label{
+#rightBar p, li{
   font-size: .7em;
-}
-
-.form-group input, label{
-  width: 25%;
-  float: left;
 }
 
 .btn-default{
@@ -92,5 +87,31 @@ body{
 
   #rightBar p, li, label{
     font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-group input{
+    width: 25%;
+    height:50%;
+    float: left;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    font-size: .65em;
+  }
+
+  .form-group label{
+    /*width: 25%;*/
+    font-size: .8em;
+    height:50%;
+    float: left;
+  }
+
+  .btn{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: .65em;
+    margin-top: -5px;
   }
 }
