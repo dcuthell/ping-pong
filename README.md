@@ -1,12 +1,12 @@
-# _Epicodus Track Picker_
+# _Ping-Pong_
 
-#### _The Epicodus Track Picker helps users determine which Epicodus porgram is right for them, 07/07/17_
+#### _The Ping-Pong site will display numbers, "ping", "pong", and "ping-pong" depending in the user's input and selection, 07/14/17_
 
 #### By _**David Cuthell**_
 
 ## Description
 
-_The Epicodus Track Picker is a website that asks the user a series of questions and provides information on the different program tracks offered by Epicodus. By asking a particular set of questions, the website narrows down the courses being offered based off of location and the user's responses._
+_The Ping-Pong site will count up to or down from a user's number, changing multiples of 3, 5, and 15 to "ping", "pong", and "ping-pong", respectively. It will then display the numbers and ping-pongs in a list. If the input given is not a number, the site will display an error pop-up._
 
 ## Setup/Installation Requirements
 
@@ -33,7 +33,7 @@ _The Epicodus Track Picker is a website that asks the user a series of questions
   * __Example Output:__ [3, 4, "pong", 6]
 * It can replace numbers divisible by 15 with the word "ping-pong".
   * __Example Input:__ [13, 14, 15, 16]
-  * __Example Output:__ [3, 4, "ping-pong", 6]
+  * __Example Output:__ [13, 14, "ping-pong", 16]
 * It can create list items in a string for each number or word given.
   * __Example Input:__ [14, "ping-pong"]
   * __Example Output:__ "\<li>14\</li>\<li>"ping-pong"\</li>"
