@@ -69,6 +69,17 @@ body{
   font-size: .7em;
 }
 
+.form-group input{
+  width: 25%;
+  height:50%;
+  float: left;
+}
+
+.form-group label{
+  height:50%;
+  float: left;
+}
+
 .btn-default{
   background-color: #BEBEC0;
 }

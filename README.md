@@ -10,12 +10,24 @@ _The Epicodus Track Picker is a website that asks the user a series of questions
 
 ## Setup/Installation Requirements
 
-* _Type https://dcuthell.github.io/trackpicker into your web browser_
+* _Type https://dcuthell.github.io/ping-pong into your web browser_
 * _Hit enter to go to the page_
-* _Fill out the form_
-* _Hit submit_
-* _Read through the personalized feedback to see what track is best for you_
-* _Join epicodus_
+* _Enter a number_
+* _Hit "Ping Pong!" or "Pong Ping!"_
+* _Check out your results_
+* _Rejoice_
+
+## Specs
+
+* _It can count up to the provided number_
+  * _Example Input: 2_
+  * _Example Output: [1,2]_
+* _Hit enter to go to the page_
+* _Enter a number_
+* _Hit "Ping Pong!" or "Pong Ping!"_
+* _Check out your results_
+* _Rejoice_
+
 
 ## Known Bugs
 
