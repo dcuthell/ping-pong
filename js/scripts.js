@@ -1,3 +1,27 @@
+function clickPong(){
+  var userInput = $("input#inputNum").val();
+  var output = "";
+  var count = 0;
+  if(isNaN(userInput)){
+    alert("Please enter in a valid number");
+    return output;
+  }
+  count = parseInt(userInput);
+  for(var i = count; i > 0; i--){
+    if(i%15 === 0){
+      output += "<li>ping-pong</li>";
+    }else if(i%5 === 0){
+      output += "<li>pong</li>";
+    }else if(i%3 === 0){
+      output += "<li>ping</li>";
+    }else{
+      output += "<li>" + i + "</li>";
+    }
+
+  }
+  $("#outputList").html(output);
+}
+
 function ppFunction(userInput){
   var output = "";
   var count = 0;
