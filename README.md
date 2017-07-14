@@ -19,14 +19,15 @@ _The Epicodus Track Picker is a website that asks the user a series of questions
 
 ## Specs
 
-* _It can count up to the provided number_
-  * _Example Input: 2_
-  * _Example Output: [1,2]_
-* _Hit enter to go to the page_
-* _Enter a number_
-* _Hit "Ping Pong!" or "Pong Ping!"_
-* _Check out your results_
-* _Rejoice_
+* It can count up to the provided number.
+  * __Example Input:__ 2
+  * __Example Output:__ [1,2]
+* It can count backwars from the provided number to 0.
+  * __Example Input: 2__
+  * __Example Output: [1,2]__
+* It can count up to the provided number
+  * __Example Input: 2__
+  * __Example Output: [1,2]__
 
 
 ## Known Bugs
