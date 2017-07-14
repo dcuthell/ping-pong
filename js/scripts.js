@@ -6,9 +6,11 @@ function ppFunction(userInput){
     return output;
   }
   count = parseInt(userInput);
+  debugger;
   for(var i = 0; i <= count; i++){
-    output += i + " ";
+    output += "<li>" + i + "</li>";
   }
+  debugger;
   return output;
 }
 
@@ -17,7 +19,7 @@ $(document).ready(function(){
   $("#inputForm").submit(function(event){
     var input = $("input#inputNum").val();
     var output = ppFunction(input);
-    $("#outputLine").text(output);
+    $("#outputList").html(output);
     event.preventDefault();
   });
 });
