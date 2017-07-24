@@ -1,53 +1,45 @@
-//Back-End
-function clickPong(){
-  var userInput = $("input#inputNum").val();
-  var output = ppFunction(userInput, "pongping");
-  $("#outputList").html(output);
-}
-
-function ppFunction(userInput, ppStyle){
-  var output = "";
+//Business Logic
+function pingPongFunction(userInput){
+  var output = [];
   var count = 0;
   if(isNaN(userInput)){
     alert("Please enter in a valid number");
     return output;
   }
   count = parseInt(userInput);
-  if(ppStyle === "pingpong"){
-    for(var i = 1; i <= count; i++){
-      if(i%15 === 0){
-        output += "<li>ping-pong</li>";
-      }else if(i%5 === 0){
-        output += "<li>pong</li>";
-      }else if(i%3 === 0){
-        output += "<li>ping</li>";
-      }else{
-        output += "<li>" + i + "</li>";
-      }
+  for(var i = 1; i <= count; i++){
+    if(i%15 === 0){
+      output.push("ping-pong");
+    }else if(i%5 === 0){
+      output.push("pong");
+    }else if(i%3 === 0){
+      output.push("ping");
+    }else{
+      output.push(i);
     }
-  } else if (ppStyle === "pongping"){
-    for(var i = count; i > 0; i--){
-      if(i%15 === 0){
-        output += "<li>ping-pong</li>";
-      }else if(i%5 === 0){
-        output += "<li>pong</li>";
-      }else if(i%3 === 0){
-        output += "<li>ping</li>";
-      }else{
-        output += "<li>" + i + "</li>";
-      }
-    }
-  }else{
-    console.log("Invalid style type");
   }
   return output;
 }
 
+//UI
 $(document).ready(function(){
   $("#inputForm").submit(function(event){
     var input = $("input#inputNum").val();
-    var output = ppFunction(input, "pingpong");
+    var outputArray = pingPongFunction(input);
+    var output = "";
+    for(i=0; i < outputArray.length; i++){
+      output += "<li>" + outputArray[i] + "</li>";
+    }
     $("#outputList").html(output);
     event.preventDefault();
+  });
+  $("#pongPing").click(function(){
+    var input = $("input#inputNum").val();
+    var outputArray = pingPongFunction(input);
+    var output = "";
+    for(i=(outputArray.length-1); i >= 0 ; i--){
+      output += "<li>" + outputArray[i] + "</li>";
+    }
+    $("#outputList").html(output);
   });
 });
